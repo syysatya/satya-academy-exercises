@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Interactive integer addition practice from Satya Academy.">
+  <title>Adding Integers | Satya Academy</title>
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand-mark" aria-hidden="true">SA</div>
+    <div>
+      <div class="brand-name">Satya Academy</div>
+      <div class="brand-subtitle">Interactive Mathematics Practice</div>
+    </div>
+  </header>
+  <main class="page">
+    <nav class="breadcrumb" aria-label="Breadcrumb">Pre-Algebra <span>/</span> Integers <span>/</span> Practice</nav>
+    <section class="lesson-heading">
+      <p class="eyebrow">QUICK PRACTICE · EASY</p>
+      <h1>Adding Integers</h1>
+      <p class="intro">Work through the question, check your answer, and review the explanation.</p>
+    </section>
+    <section class="question-card" aria-labelledby="question-title">
+      <div class="question-meta">
+        <span class="question-number">Question 1</span>
+        <span class="marks">1 mark</span>
+      </div>
+      <h2 id="question-title">Evaluate:</h2>
+      <div class="math-expression" aria-label="negative nine plus fourteen">−9 + 14</div>
+      <label for="answer">Your answer</label>
+      <div class="answer-row">
+        <input id="answer" type="number" inputmode="numeric" placeholder="Enter an integer" autocomplete="off">
+        <button id="check-btn" type="button">Check answer</button>
+      </div>
+      <p id="feedback" class="feedback" role="status" aria-live="polite"></p>
+      <div class="actions">
+        <button id="hint-btn" class="secondary" type="button" aria-expanded="false" aria-controls="hint">Show hint</button>
+        <button id="solution-btn" class="text-button" type="button" aria-expanded="false" aria-controls="solution">View solution</button>
+      </div>
+      <div id="hint" class="reveal-panel" hidden>
+        <strong>Hint</strong>
+        <p>Start at −9 on the number line. Adding 14 means move 14 units to the right.</p>
+      </div>
+      <div id="solution" class="reveal-panel solution" hidden>
+        <strong>Worked solution</strong>
+        <ol>
+          <li>The integers have opposite signs.</li>
+          <li>Subtract their absolute values: 14 − 9 = 5.</li>
+          <li>Keep the sign of the number with the greater absolute value. Since 14 is positive, the result is positive.</li>
+        </ol>
+        <p class="final-answer">Final answer: 5</p>
+      </div>
+    </section>
+    <footer>
+      <p>Practice independently. This demonstration checks your response in this browser only; it does not save student results.</p>
+      <p class="attribution">Satya Academy · Interactive practice prototype</p>
+    </footer>
+  </main>
+</body>
+</html>
